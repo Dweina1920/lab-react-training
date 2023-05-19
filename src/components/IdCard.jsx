@@ -1,26 +1,21 @@
 function IdCard(props) {
   let birth = props.birth;
-  const day = birth.toLocaleString('en-us', { weekday: 'short' });
-  const month = birth.toLocaleString('en-us', { month: 'short' });
-  const dayOfBirth = birth.getDate();
-  const yearOfBirth = birth.getFullYear();
+  
 
-  const fullDate = `${day} ${month} ${dayOfBirth} ${yearOfBirth}`;
-  console.log(fullDate);
-
+  const fullDate = birth.toDateString();
   return (
-    <div className="flex justify-around aligne-center border w-96 m-auto my-10">
+    <div className="flex justify-around aligne-center border w-96 m-auto my-10 bg-yellow-50 text-left">
       <div>
         <img src={props.picture}></img>
       </div>
       <div className="column justify-center aligne-center m-auto">
         <p>
-          name: {props.firstName} {props.lastName}
+          Name: {props.firstName} {props.lastName}
         </p>
-        <p>gender:{props.gender}</p>
-        <p>birth:{fullDate}</p>
+        <p>Gender: {props.gender}</p>
+        <p>Birth: {fullDate}</p>
 
-        <p>height: {props.height}cm</p>
+        <p>Height: {props.height/100 + "m"}</p>
       </div>
     </div>
   );
