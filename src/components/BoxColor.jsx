@@ -8,11 +8,9 @@ function ConvertRGBtoHex(r, g, b) {
 
 function BoxColor(props) {
   let colorHexadecimal = ConvertRGBtoHex(props.r, props.g, props.b);
-  //let colorRGB= rgb(props.r, props.g, props.b);
-  console.log(props.r, props.g, props.b);
   let colorRGB = `rgb(${props.r}, ${props.g}, ${props.b})`;
   return (
-    <div style={{ backgroundColor: `${colorRGB}` }}>
+    <div className="w-96 m-auto my-10" style={{ backgroundColor: `${colorRGB}` }}>
       <p>{colorRGB}</p>
       <p>{colorHexadecimal}</p>
     </div>
