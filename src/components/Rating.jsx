@@ -1,5 +1,5 @@
 function Rating({ children }) {
-  console.log(children);
+  //console.log(children);
 
   let estrellas = '☆☆☆☆☆';
   if (children < 0.49) {

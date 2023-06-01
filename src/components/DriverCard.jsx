@@ -8,12 +8,12 @@ function DriverCard(props) {
       <div>
         <img className="h-40 w-40 rounded-full p-4" src={props.img}></img>
       </div>
-      <div className=" d-column justify-center aligne-center">
-        <p id="name">{props.name}</p>
-        <p id="stars">
+      <div className=" d-column justify-center aligne-center pt-8">
+        <p id="name" className='text-left'>{props.name}</p>
+        
           <Rating>{props.rating}</Rating>
-        </p>
-        <p id="car">{car}</p>
+        
+        <p id="car " className='text-left'>{car}</p>
       </div>
     </div>
   );

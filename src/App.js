@@ -6,10 +6,15 @@ import BoxColor from './components/BoxColor';
 import CreditCard from './components/CreditCard';
 import Rating from './components/Rating';
 import DriverCard from './components/DriverCard';
+import LikeButton from './components/LikeButton';
+import FaceBook from './components/FaceBook';
+
 
 function App() {
   return (
     <div className="App">
+    <h1>Exercise:8</h1>
+    <LikeButton/>
       <h1>Exercise1:</h1>
 
       <IdCard
@@ -85,7 +90,7 @@ function App() {
       <Rating>3</Rating>
       <Rating>4</Rating>
       <Rating>5</Rating>
-
+      <div className='m-auto'>
       <DriverCard
         name="Travis Kalanick"
         rating={4.2}
@@ -95,8 +100,8 @@ function App() {
           licensePlate: 'CO42DE',
         }}
       />
-
-      <DriverCard
+ 
+      <DriverCard 
         name="Dara Khosrowshahi"
         rating={4.9}
         img="https://ubernewsroomapi.10upcdn.com/wp-content/uploads/2017/09/Dara_ELT_Newsroom_1000px.jpg"
@@ -105,7 +110,12 @@ function App() {
           licensePlate: 'BE33ER',
         }}
       />
+
+      <FaceBook/>
     </div>
+    
+    </div>
+   
   );
 }
 
