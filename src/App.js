@@ -8,11 +8,17 @@ import Rating from './components/Rating';
 import DriverCard from './components/DriverCard';
 import LikeButton from './components/LikeButton';
 import FaceBook from './components/FaceBook';
+import RGBColorPicker from './components/RGBColorPicker';
 
 
 function App() {
   return (
     <div className="App">
+    <div className='mx-auto flex '>
+  
+    <RGBColorPicker/>
+    </div>
+    
     <h1>Exercise:8</h1>
     <LikeButton/>
       <h1>Exercise1:</h1>
